@@ -16,7 +16,6 @@ export default function ContentLanding({ loading, fileInfo, missing }) {
   const [offset, setOffset] = useState(0);
   const [limit] = useState(50);
   const [verifying, setVerifying] = useState(false);
-  const [messageToSign, setMessageToSign] = useState("");
 
   const [{ data: accountData, error: accountError, loading: accountLoading }, disconnect] = useAccount()
 
